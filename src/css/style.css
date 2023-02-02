@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+main {
+    background-color: #000;
+    opacity: 85%;
+    width: 90%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 24px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 22px;
+    margin-top: 24px;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 24px;
+    font-size: 1.25rem;
+    background-color: #7c7c7c2b;
+    color: #FFF;
+    width: calc(100% - 100px);
+}
+
+button {
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #7c7c7c2b;
+    float: right;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #7c7c7c6b;
+    cursor: pointer;
+    border-radius: 30%;
+}
+
+button .lupa {
+    width: 24px;
+}
+
+section {
+    margin-top: 30px;
+}

@@ -11,19 +11,26 @@
 
 <body>
     <main>
+        <info>Escreva o nome de uma cidade, estado ou país</info>
         <nav>
-            <input placeholder="Cidade..." type="text">
-            <button>
+            <input class="user-input" placeholder="Digite..." type="text">
+            <button onclick="userClick()">
                 <img src="src/images/lupa.svg" class="lupa">
             </button>
         </nav>
         
         <section>
-            <h2>Tempo em São Paulo</h2>
-            <p>Temperatura: 30°</p>
-            <p>Umidade: 50%</p>
-            <p>Nuvens Dispersas</p>
+            <h2 class="cidade">Tempo em São Paulo</h2>
+            <p class="temperatura">32°C</p>
+            <p class="umidade">Umidade 26%</p>
+
+            <div class="desc-container">
+                <p class="descricao">Nuvens Dispersas</p>
+                <img class="icone" src="https://openweathermap.org/img/wn/04n.png">
+            </div>
         </section>
     </main>
+
+    <script src="src/js/scripts.js"></script>
 </body>
 </html>

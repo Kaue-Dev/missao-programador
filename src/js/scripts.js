@@ -19,7 +19,21 @@ async function buscarCidade(cidade) { //função para pegar a cidade que o usuar
     mostrarNaTela(dados); //chamando a função mostrarNaTela
 }
 
+document.addEventListener("keypress", (e) => { // função para pequisar pressionando o enter
+    if (e.key === "Enter") {
+        userClick();
+    }
+})
+
 function userClick() { // função para quando o usuario clicar no botão de pesquisa
     let userCidade = document.querySelector(".user-input").value // colocando o input em uma variavel e usando .value para pegar apenas o que foi digitado dentro do input
     buscarCidade(userCidade); //chamando a função userCidade
 }
+
+//Tratamento de erro
+//function mostrarErroNaTela() {
+    //if (dados.cod === "404") {
+        //alert("Não foi possivel encontrar");
+    //}
+//}
+//mostrarErroNaTela();
